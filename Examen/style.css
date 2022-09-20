@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+}
+ul, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.col-1 {
+    flex: 1;
+    padding: 5px;
+}
+.col-2 {
+    flex: 2;
+    padding: 5px;
+}
+.col-3 {
+    flex: 3;
+    padding: 5px;
+}
+.col-4 {
+    flex: 4;
+    padding: 5px;
+}
+.col-5 {
+    flex: 5;
+    padding: 5px;
+}
+.col-6 {
+    flex: 6;
+    padding: 5px;
+}
+.body-content {
+    margin: 0px 10px;
+}
+
+/* TOPBAR */
+.topbar {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+}
+.topbar .content {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: inline;
+    vertical-align: middle;
+}
+.logo h1{
+    display: inline;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 0px 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo img {
+    background-color: #00bbb2;
+    border-radius: 3px;
+    width: 30px;
+    margin: 0px 0px -5px 0px;
+}
+input[type="search"] {
+    width: 100%;
+    height: 30px;
+    border-radius: 100px;
+    border: solid 2px #c2c2c2;
+    background-color: #f5f4f5;
+}
+input[type="search"]::placeholder {
+    padding: 0px 0px 0px 10px;
+    opacity: 0.6;
+    font-size: 12px;
+}
+.cart {
+    display: inline;
+    vertical-align: middle;
+}
+.cart img {
+    width: 30px;
+    cursor: pointer;
+}
+.topbar-right.col-1 {
+    flex: inherit;
+}
+/* FIN TOPBAR */
+
+/* MENU */
+.menu {
+    padding: 0px 20px;
+}
+ul.menu-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 0 7px 0;
+    list-style: none;
+    border-bottom: solid 3px;
+}
+ul.menu-list li {
+    cursor: pointer;
+}
+/* FIN MENU */
+
+/* CUUERPO */
+/* PRIMERA FILA (Titular)*/
+.first-row .row {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 30px;
+}
+/* FIN PRIMERA FILA (Titular)*/
+/* SEGUNDA FILA (bloques) */
+.card {
+    /* border: solid; */
+    background-color: #00bbb2;
+    margin: 0px 10px 20px 10px;
+    display: flex;
+
+}
+.img-card {
+    line-height: 0;
+}
+.second-row {
+    display: flex;
+}
+.first-col {
+    flex: 2;
+}
+.text {
+    /* padding: 50px; */
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.card.type-1 {
+    height: 300px;
+    overflow: hidden;
+}
+.img-card {
+    line-height: 0;
+    background-image: url(assets/succulents-1.jpg);
+    background-size: cover;
+}
+.type-1 .text h3 {
+    padding: 40px 0px 0px 0px;
+    font-weight: 100;
+    width: 230px;
+    margin: auto;
+}
+.btn-card button {
+    color: white;
+    font-size: 25px;
+}
+.btn-card img {
+    width: 29px;
+}
+.btn-card {
+    padding: 30px 0px 0px 0px;
+    cursor: pointer;
+}
+/* Card type 2 */
+.card.type-2 {
+    height: 220px;
+    background-image: url(assets/aloe-m.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Card type 3 */
+.type-3 button {
+    font-size: 18px;
+    padding: 0px 0px 0px 30px;
+}
+.type-3 .btn-card {
+    padding: 20px 0px;
+}
+.card.type-3 {
+    height: 60px;
+}
+.type-3 .btn-card img{
+    vertical-align: middle;
+    width: 18px;
+}
+.second-col {
+    flex: 1;
+}
+/* FIN SEGUNDA FILA (bloques) */
+
+/* tercera fila (productos) */
+.products {
+    background-color: #a7eae7;
+    margin: 0px 10px 20px 10px;
+    display: flex;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.succulent {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.succulent img {
+    width: 90%;
+    border-radius: 500px;
+    overflow: hidden;
+}
+.succulent h4 {
+    padding-top: 10px;
+}
+
+/* Alerta cookie */
+.alert-cookie {
+    border: solid 2px;
+    margin: 10px;
+    bottom: 10px;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    width: 1157px;
+    height: 100px;
+    justify-content: center;
+}
+.alert-cookie .row {
+    display: flex;
+}
+.alert-cookie button {
+    background-color: #00bbb2;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    width: 100px;
+    border: solid 3px #000;
+    box-shadow: 4px 4px #000;
+}
+.cookie-policy h4 {
+    padding: 35px;
+}
+.icon img {
+    margin: 18px 0px;
+}
+.btn-cookie {
+    margin: 31px 0px;
+}

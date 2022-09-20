@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+        <!-- Top bar -->
+        <div class="topbar">
+            <div class="content">
+                <div class="topbar-left">
+                    <div class="logo">
+                        <img src="assets/leaf.png" alt="logo">
+                        <h1>EasyBay</h1>
+                    </div>
+                </div>
+                <div class="topbar-center col-5">
+                    <input type="search" placeholder="Search for anything">
+                </div>
+                <div class="topbar-right col-1">    
+                    <button>Sign in</button>
+                    <div class="cart" onclick="emptyCart()">
+                        <img src="assets/cart-dark.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Top bar -->
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="menu-list">
+                <li>Aeonium</li>
+                <li>Andormischus</li>
+                <li>Agave</li>
+                <li>Aloe</li>
+                <li>Anacampseros</li>
+                <li>Aristaloe</li>
+                <li>More...</li>
+            </ul>
+        </div>
+        <!-- Fin menu -->
+
+
+        <!-- Cuerpo -->
+        <div class="body-content">
+            <!-- primera fila -->
+            
+                <div class="first-row">
+                    <div class="row">
+                        <h2>Your Sourface for Seriuous Succulent Specialities</h2>
+                    </div>
+                </div>
+            
+            <!-- fin primera fila (Titular)-->
+            <!-- segunda fila (Bloques)-->
+            <div class="second-row">
+                <div class="first-col">
+                    <!-- Card type1 -->
+                    <div class="card type-1">
+                        <div class="text col-1">
+                            <h3>Discover succ- ulent varieties one pot or rack at time</h3>
+                            <div class="btn-card">
+                                <button>Discover</button>
+                                <img src="assets/arrow-light.png" alt="arrow-light">
+                            </div>
+                        </div>
+                        <div class="img-card col-1" onmouseover="hoverImg(this)" onmouseout="outImg(this)">
+                        </div>
+                    </div>
+                    <!-- Fin Card type1 -->
+                </div>
+                <div class="second-col">
+                    <!-- Card type 2 -->
+                    <div class="card type-2">
+                        <div class="img-card">
+                            <!-- <img src="assets/aloe-m.jpg" alt=""> -->
+                        </div>
+                    </div>
+                    <!-- Fin Card type 2 -->
+                    <!-- Card type 3 -->
+                    <div class="card type-3">
+                        <div class="btn-card">
+                            <button>Soothing aloe</button>
+                            <img src="assets/arrow-light.png" alt="arrow-light">
+                        </div>
+                    </div>
+                    <!-- fin card type 3 -->
+                </div>   
+            </div>
+            <!-- fin segunda fila (Bloques)-->
+            <!-- Tercera Fila -->
+            <div class="third-row">
+                <div class="row">
+                    <div class="products">
+                        <div class="succulent">
+                            <img src="assets/aeonium-s.jpg">
+                            <h4>Aeinium</h4>
+                        </div>
+                        <div class="succulent">
+                            <img src="assets/aloe-s.jpg">
+                            <h4>Aloe</h4>
+                        </div>
+                        <div class="succulent">
+                            <img src="assets/cactus-s.jpg">
+                            <h4>Cactus</h4>
+                        </div>
+                        <div class="succulent">
+                            <img src="assets/echeveria-s.jpg">
+                            <h4>Echeveria</h4>
+                        </div>
+                        <div class="succulent">
+                            <img src="assets/sedum-s.jpg">
+                            <h4>Sedum</h4>
+                        </div>
+                        <div class="succulent">
+                            <img src="assets/sempervivum-s.jpg">
+                            <h4>Sempevivum</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- fin Tercera Fila -->
+            <!-- alert -->
+            <div class="alert-cookie">
+                <div class="row">
+                    <div class="icon">
+                        <img src="assets/alert-dark.png" alt="">
+                    </div>
+                    <div class="cookie-policy">
+                        <h4>This site makes use of tthird-party cookies, by clicking "Iaccept" you agree to the terms outlined in our <a href="#">cookie policy.</a></h4>
+                    </div>
+                    <div class="btn-cookie">
+                        <button onclick="hide()">I accept</button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin alert -->
+
+
+        </div>
+        <!-- fin body content-->
+        <script src="script.js"></script>
+   </div>
+</body>
+</html>
